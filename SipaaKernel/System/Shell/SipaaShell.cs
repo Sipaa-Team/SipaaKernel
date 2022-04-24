@@ -20,7 +20,6 @@ namespace SipaaKernel.System.Shell
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("Initializing command library...");
             Kernel.Wait(1232);
-            cmdList.Add(new Commands.System.StartGUICommand());
             cmdList.Add(new Commands.System.ThrowPSODCommand());
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;

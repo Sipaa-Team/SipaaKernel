@@ -1,7 +1,11 @@
-﻿using SipaaKernel.System.Drivers;
+﻿using Cosmos.System.Graphics;
+using Cosmos.System.Graphics.Fonts;
+using SipaaKernel.System;
+using SipaaKernel.System.Drivers;
 using SipaaKernel.System.Shell;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using Sys = Cosmos.System;
 
@@ -50,8 +54,6 @@ namespace SipaaKernel
             } catch(Exception e)
             {
                 // Exception occured, disable GUI and show the PSOD
-                if (SGSD.IsGraphicsEnabled())
-                    SGSD.StopDriver();
 
                 PSOD(e.Message);
             }
